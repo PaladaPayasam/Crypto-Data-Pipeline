@@ -1,0 +1,9 @@
+# Hide Google Cloud credentials
+google_creds.json
+
+# Hide local raw data dumps
+raw_crypto_data.csv
+
+# Hide Python cache files
+__pycache__/
+.pytest_cache/
