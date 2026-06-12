@@ -1,9 +1,15 @@
-# Hide Google Cloud credentials
+# Block private Google Cloud Service Account Credentials
 google_creds.json
+*.json
 
-# Hide local raw data dumps
-raw_crypto_data.csv
-
-# Hide Python cache files
+# Block local Python and Mage cache folders
 __pycache__/
-.pytest_cache/
+*.pyc
+.block_cache/
+.pipeline_cache/
+mage_user_config.yaml
+
+# Block general system/IDE junk
+.vscode/
+.idea/
+.DS_Store

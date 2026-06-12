@@ -1,0 +1,17 @@
+name: crypto_load_job
+type: python
+uuid: crypto_load_job
+blocks:
+  - uuid: fetch_crypto_api
+    type: data_loader
+    language: python
+    upstream_blocks: []
+    downstream_blocks:
+      - load_to_bigquery
+
+  - uuid: load_to_bigquery
+    type: data_exporter
+    language: python
+    upstream_blocks:
+      - fetch_crypto_api
+    downstream_blocks: []
