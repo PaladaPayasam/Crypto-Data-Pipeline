@@ -6,7 +6,7 @@ import pandas as pd
 def load_data_from_api(*args, **kwargs):
     url = "https://api.coingecko.com/api/v3/coins/markets"
     params = {
-        "vs_currency": "usd",
+        "vs_currency": "inr",
         "ids": "bitcoin,ethereum,solana,cardano"
     }
     response = requests.get(url, params=params)
